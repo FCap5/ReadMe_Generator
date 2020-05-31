@@ -1,9 +1,9 @@
-# Title
+# The README Generator
  
-[![Build Status](https://img.shields.io/github/followers/ffejcaplan?style=social)](https://img.shields.io/github/followers/ffejcaplan?label=Follow&style=social)
+[![Build Status](https://img.shields.io/github/followers/ffejcaplan?style=social)](https://github.com/ffejcaplan?tab=followers)
  
 ## Project Description
-This is a README generator
+This is an easy to use README generator
  
 ## Table of Contents
 * [Installation](#installation)
@@ -15,20 +15,20 @@ This is a README generator
 
  
 ## Installation
-Install
+npm install
  
 ## Usage
-use
+use to create a README
  
 ## License
-license
+Licenses
  
 ## Contributors
 Ffej Caplan
  
 ## Tests
-test
+This was tested a bunch
  
 ## Questions
-If you have any questions about the repo, open an issue or contact me directly at email 
- pic
+If you have any questions about the repo, open an issue or contact me directly at ffej.caplan@gmail.com 
+ -

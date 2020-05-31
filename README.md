@@ -1,9 +1,9 @@
-# README Genertor
+# README Generator
  
 [![Build Status](https://img.shields.io/github/followers/ffejcaplan?style=social)](https://github.com/ffejcaplan?tab=followers)
  
 ## Project Description
-This is a README Generator. By answering a few simple prompts, this app will provide the user with a useable README for their GitHub Respository
+An easy to use readme Generator
  
 ## Table of Contents
 * [Installation](#installation)
@@ -15,10 +15,10 @@ This is a README Generator. By answering a few simple prompts, this app will pro
 
  
 ## Installation
-npm install
+---------- "\n" npm install
  
 ## Usage
-Usage
+use it in good health
  
 ## License
 License
@@ -27,8 +27,8 @@ License
 Ffej Caplan
  
 ## Tests
-Testing testing
+Testing 
  
 ## Questions
 If you have any questions about the repo, open an issue or contact me directly at ffej.caplan@gmail.com 
- pic
+ ![GitHub Image](assets/IMG_20190714_075114019.jpg)

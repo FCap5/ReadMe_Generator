@@ -119,7 +119,7 @@ const writeToFile = (response) => {
       "\n" +
       `If you have any questions about the repo, open an issue or contact me directly at ${
         response.GitHubEmail
-      } ${"\n"} ${response.GitHubPic}`,
+      } ${"\n"} ![GitHub Image](${response.GitHubPic})`,
     (err) => {
       if (err) {
         console.log(err);

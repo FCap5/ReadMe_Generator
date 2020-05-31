@@ -21,6 +21,7 @@ const writeToFile = (response) => {
     "# " +
       response.title +
       "\n \n" +
+      //+[![]()]() +
       "## " +
       "Project Description" +
       "\n" +
@@ -45,9 +46,10 @@ const writeToFile = (response) => {
     );
 
     names.forEach((content) => {
+      const contentLC = content.toLowerCase();
       fs.appendFileSync(
         "README.md",
-        "* " + `[${content}] ` + `(#${content})` + "\n",
+        "* " + `[${content}] ` + `(#${contentLC})` + "\n",
         (err) => {
           if (err) {
             console.log(err);

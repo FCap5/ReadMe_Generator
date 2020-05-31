@@ -22,6 +22,7 @@ const writeToFile = (response) => {
       response.title +
       "\n \n" +
       "[![Build Status](https://img.shields.io/github/followers/ffejcaplan?style=social)](https://img.shields.io/github/followers/ffejcaplan?label=Follow&style=social)" +
+      "\n \n" +
       "## " +
       "Project Description" +
       "\n" +

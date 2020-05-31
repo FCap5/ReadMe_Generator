@@ -1,9 +1,9 @@
-# Testing 1
+# Title
  
 [![Build Status](https://img.shields.io/github/followers/ffejcaplan?style=social)](https://img.shields.io/github/followers/ffejcaplan?label=Follow&style=social)
  
 ## Project Description
-testing out the badge
+This is a README generator
  
 ## Table of Contents
 * [Installation](#installation)
@@ -15,20 +15,20 @@ testing out the badge
 
  
 ## Installation
-sdfa
+Install
  
 ## Usage
-asgd
+use
  
 ## License
-adsf
+license
  
 ## Contributors
-asdg
+Ffej Caplan
  
 ## Tests
-asdf
+test
  
 ## Questions
-If you have any questions about the repo, open an issue or contact me directly at asd 
- asdg
+If you have any questions about the repo, open an issue or contact me directly at email 
+ pic

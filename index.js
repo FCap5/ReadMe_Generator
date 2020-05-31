@@ -4,15 +4,6 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const markdown = require("./generateMarkdown");
 
-//don't forget to npm init
-
-/*
-the use will be prompted for their Github username and other 
-information pretaining to the project the README is for
-Following the common templates for user stories we can fram this challenge as follows:
-
-*/
-
 const questions = [
   { type: "input", name: "title", message: "What is your Project Title?" }, //string
   { type: "input", name: "description", message: "What is your Description?" }, // [string]

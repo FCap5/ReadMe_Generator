@@ -10,14 +10,14 @@ const names = [
 ];
 
 const writeToFile = (response) => {
-  fs.writeFile("README.md", "", (err) => {
+  fs.writeFile("Generated_README.md", "", (err) => {
     if (err) {
       console.log(err);
     } else {
     }
   });
   fs.appendFileSync(
-    "README.md",
+    "Generated_README.md",
     "# " +
       response.title +
       "\n \n" +
@@ -36,7 +36,7 @@ const writeToFile = (response) => {
   );
   if (response.TOC == true) {
     fs.appendFileSync(
-      "README.md",
+      "Generated_README.md",
       "\n \n" + "## Table of Contents" + "\n",
       (err) => {
         if (err) {
@@ -49,7 +49,7 @@ const writeToFile = (response) => {
     names.forEach((content) => {
       const contentLC = content.toLowerCase();
       fs.appendFileSync(
-        "README.md",
+        "Generated_README.md",
         "* " + `[${content}]` + `(#${contentLC})` + "\n",
         (err) => {
           if (err) {
@@ -62,7 +62,7 @@ const writeToFile = (response) => {
   }
 
   fs.appendFileSync(
-    "README.md",
+    "Generated_README.md",
     "\n \n" + "## " + "Installation" + "\n" + response.installation,
     (err) => {
       if (err) {
@@ -72,7 +72,7 @@ const writeToFile = (response) => {
     }
   );
   fs.appendFileSync(
-    "README.md",
+    "Generated_README.md",
     "\n \n" + "## " + "Usage" + "\n" + response.usage,
     (err) => {
       if (err) {
@@ -82,7 +82,7 @@ const writeToFile = (response) => {
     }
   );
   fs.appendFileSync(
-    "README.md",
+    "Generated_README.md",
     "\n \n" + "## " + "License" + "\n" + response.license,
     (err) => {
       if (err) {
@@ -92,7 +92,7 @@ const writeToFile = (response) => {
     }
   );
   fs.appendFileSync(
-    "README.md",
+    "Generated_README.md",
     "\n \n" + "## " + "Contributors" + "\n" + response.contributors,
     (err) => {
       if (err) {
@@ -102,7 +102,7 @@ const writeToFile = (response) => {
     }
   );
   fs.appendFileSync(
-    "README.md",
+    "Generated_README.md",
     "\n \n" + "## " + "Tests" + "\n" + response.tests,
     (err) => {
       if (err) {
@@ -112,7 +112,7 @@ const writeToFile = (response) => {
     }
   );
   fs.appendFileSync(
-    "README.md",
+    "Generated_README.md",
     "\n \n" +
       "## " +
       "Questions" +

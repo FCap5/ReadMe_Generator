@@ -1,25 +1,71 @@
-/*
-the readme will be populated with the following:
+const fs = require("fs");
 
-at least one badge
-Project Title
-Description
-TOC
-Installation
-Usage
-License
-Contribuiting 
-Tests
-Questions
-User GitHub profile picture
-User Github email
-*/
+const names = [
+  "Installation",
+  "Usage",
+  "License",
+  "Contributors",
+  "Tests",
+  "Questions",
+];
 
-function generateMarkdown(data) {
-  return `
-# ${data.title}
+const writeToFile = (response) => {
+  fs.writeFile(
+    "README.md",
+    "# " +
+      response.title +
+      "\n \n" +
+      "## " +
+      "Project Description" +
+      "\n" +
+      response.description +
+      "\n",
+    (err) => {
+      if (err) {
+        console.log(err);
+      } else {
+        console.log("Success");
+      }
+    }
+  );
 
-`;
-}
+  if (response.TOC == true) {
+    fs.appendFile("README.md", "##### Table of Contents" + "\n", (err) => {
+      if (err) {
+        console.log(err);
+      } else {
+        console.log("Success");
+      }
+    });
 
-module.exports = generateMarkdown;
+    names.forEach((content) => {
+      fs.appendFile(
+        "README.md",
+        "* " + `[${content}] ` + `(#${content})` + "\n",
+        (err) => {
+          if (err) {
+            console.log(err);
+          } else {
+            console.log("Success");
+          }
+        }
+      );
+    });
+  }
+
+  names.forEach((namely) => {
+    fs.appendFile(
+      "README.md",
+      "## " + namely + "\n" + response[namely] + "\n",
+      (err) => {
+        if (err) {
+          console.log(err);
+        } else {
+          console.log("Success");
+        }
+      }
+    );
+  });
+};
+
+module.exports = { writeToFile: writeToFile };

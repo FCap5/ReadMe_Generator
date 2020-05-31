@@ -45,5 +45,5 @@ npm test
 
 ## Questions
 
-If you have any questions about the repo, open an issue or contact me directly at (mailto:ffej.caplan@gmail.com)
+If you have any questions about the repo, open an issue or contact me directly at ffej.caplan@gmail.com
 ![GitHub Image](assets/IMG_20190714_075114019.jpg)

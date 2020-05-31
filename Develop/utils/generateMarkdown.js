@@ -49,7 +49,7 @@ const writeToFile = (response) => {
       const contentLC = content.toLowerCase();
       fs.appendFileSync(
         "README.md",
-        "* " + `[${content}] ` + `(#${contentLC})` + "\n",
+        "* " + `[${content}]` + `(#${contentLC})` + "\n",
         (err) => {
           if (err) {
             console.log(err);
@@ -62,13 +62,47 @@ const writeToFile = (response) => {
 
   fs.appendFileSync(
     "README.md",
-    "\n \n" +
-      '<a name="installation"></a>' +
-      "\n" +
-      "## " +
-      "Installation" +
-      "\n" +
-      response.installation,
+    "\n \n" + "## " + "Installation" + "\n" + response.installation,
+    (err) => {
+      if (err) {
+        console.log(err);
+      } else {
+      }
+    }
+  );
+  fs.appendFileSync(
+    "README.md",
+    "\n \n" + "## " + "Usage" + "\n" + response.usage,
+    (err) => {
+      if (err) {
+        console.log(err);
+      } else {
+      }
+    }
+  );
+  fs.appendFileSync(
+    "README.md",
+    "\n \n" + "## " + "License" + "\n" + response.license,
+    (err) => {
+      if (err) {
+        console.log(err);
+      } else {
+      }
+    }
+  );
+  fs.appendFileSync(
+    "README.md",
+    "\n \n" + "## " + "Contributors" + "\n" + response.contributors,
+    (err) => {
+      if (err) {
+        console.log(err);
+      } else {
+      }
+    }
+  );
+  fs.appendFileSync(
+    "README.md",
+    "\n \n" + "## " + "Tests" + "\n" + response.tests,
     (err) => {
       if (err) {
         console.log(err);
@@ -79,72 +113,6 @@ const writeToFile = (response) => {
   fs.appendFileSync(
     "README.md",
     "\n \n" +
-      "<a name='usage'></a>" +
-      "\n" +
-      "## " +
-      "Usage" +
-      "\n" +
-      response.usage,
-    (err) => {
-      if (err) {
-        console.log(err);
-      } else {
-      }
-    }
-  );
-  fs.appendFileSync(
-    "README.md",
-    "\n \n" +
-      '<a name="license"></a>' +
-      "\n" +
-      "## " +
-      "License" +
-      "\n" +
-      response.license,
-    (err) => {
-      if (err) {
-        console.log(err);
-      } else {
-      }
-    }
-  );
-  fs.appendFileSync(
-    "README.md",
-    "\n \n" +
-      '<a name="contributors"></a>' +
-      "\n" +
-      "## " +
-      "Contributors" +
-      "\n" +
-      response.contributors,
-    (err) => {
-      if (err) {
-        console.log(err);
-      } else {
-      }
-    }
-  );
-  fs.appendFileSync(
-    "README.md",
-    "\n \n" +
-      '<a name="tests"></a>' +
-      "\n" +
-      "## " +
-      "Tests" +
-      "\n" +
-      response.tests,
-    (err) => {
-      if (err) {
-        console.log(err);
-      } else {
-      }
-    }
-  );
-  fs.appendFileSync(
-    "README.md",
-    "\n \n" +
-      '<a name="questions"></a>' +
-      "\n" +
       "## " +
       "Questions" +
       "\n" +

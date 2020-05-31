@@ -114,7 +114,9 @@ const writeToFile = (response) => {
       "## " +
       "Questions" +
       "\n" +
-      `If you have any questions about the repo, open an issue or contact me directly at ${response.GitHubEmail}`,
+      `If you have any questions about the repo, open an issue or contact me directly at ${
+        response.GitHubEmail
+      } ${"\n"} ${response.GitHubPic}`,
     (err) => {
       if (err) {
         console.log(err);

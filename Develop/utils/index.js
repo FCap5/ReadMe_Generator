@@ -31,7 +31,7 @@ const questions = [
   {
     type: "input",
     name: "contributors",
-    message: "Who are your Contributers?",
+    message: "Who are your Contributors?",
   }, // Array:stri ng ["name", "name2"]
   { type: "input", name: "tests", message: "What are your Tests?" }, // [string]
   { type: "input", name: "questions", message: "What are your Questions?" }, // [Array:string] ["question 1", "question 2"]

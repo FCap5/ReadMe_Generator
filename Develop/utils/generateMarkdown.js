@@ -10,7 +10,13 @@ const names = [
 ];
 
 const writeToFile = (response) => {
-  fs.writeFile(
+  fs.writeFile("README.md", "", (err) => {
+    if (err) {
+      console.log(err);
+    } else {
+    }
+  });
+  fs.appendFileSync(
     "README.md",
     "# " +
       response.title +
@@ -18,54 +24,104 @@ const writeToFile = (response) => {
       "## " +
       "Project Description" +
       "\n" +
-      response.description +
-      "\n",
+      response.description,
     (err) => {
       if (err) {
         console.log(err);
       } else {
-        console.log("Success");
       }
     }
   );
-
   if (response.TOC == true) {
-    fs.appendFile("README.md", "##### Table of Contents" + "\n", (err) => {
-      if (err) {
-        console.log(err);
-      } else {
-        console.log("Success");
+    fs.appendFileSync(
+      "README.md",
+      "\n \n" + "##### Table of Contents" + "\n",
+      (err) => {
+        if (err) {
+          console.log(err);
+        } else {
+        }
       }
-    });
+    );
 
     names.forEach((content) => {
-      fs.appendFile(
+      fs.appendFileSync(
         "README.md",
         "* " + `[${content}] ` + `(#${content})` + "\n",
         (err) => {
           if (err) {
             console.log(err);
           } else {
-            console.log("Success");
           }
         }
       );
     });
   }
 
-  names.forEach((namely) => {
-    fs.appendFile(
-      "README.md",
-      "## " + namely + "\n" + response[namely] + "\n",
-      (err) => {
-        if (err) {
-          console.log(err);
-        } else {
-          console.log("Success");
-        }
+  fs.appendFileSync(
+    "README.md",
+    "\n \n" + "## " + "Installation" + "\n" + response.installation,
+    (err) => {
+      if (err) {
+        console.log(err);
+      } else {
       }
-    );
-  });
+    }
+  );
+  fs.appendFileSync(
+    "README.md",
+    "\n \n" + "## " + "Usage" + "\n" + response.usage,
+    (err) => {
+      if (err) {
+        console.log(err);
+      } else {
+      }
+    }
+  );
+  fs.appendFileSync(
+    "README.md",
+    "\n \n" + "## " + "License" + "\n" + response.license,
+    (err) => {
+      if (err) {
+        console.log(err);
+      } else {
+      }
+    }
+  );
+  fs.appendFileSync(
+    "README.md",
+    "\n \n" + "## " + "Contributors" + "\n" + response.contributors,
+    (err) => {
+      if (err) {
+        console.log(err);
+      } else {
+      }
+    }
+  );
+  fs.appendFileSync(
+    "README.md",
+    "\n \n" + "## " + "Tests" + "\n" + response.tests,
+    (err) => {
+      if (err) {
+        console.log(err);
+      } else {
+      }
+    }
+  );
+  fs.appendFileSync(
+    "README.md",
+    "\n \n" +
+      "## " +
+      "Questions" +
+      "\n" +
+      `If you have any questions about the repo, open an issue or contact me directly at ${response.GitHubEmail}`,
+    (err) => {
+      if (err) {
+        console.log(err);
+      } else {
+      }
+    }
+  );
 };
 
 module.exports = { writeToFile: writeToFile };

@@ -1,5 +1,3 @@
-//init();
-
 const inquirer = require("inquirer");
 const fs = require("fs");
 const markdown = require("./generateMarkdown");
@@ -33,10 +31,3 @@ inquirer.prompt(questions).then((answers) => {
   console.log(answers);
   markdown.writeToFile(answers);
 });
-
-/* function init() {
-  //initialize stuff that i need here
-}
-
-init();
- */

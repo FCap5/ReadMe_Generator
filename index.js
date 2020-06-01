@@ -2,10 +2,12 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const markdown = require("./generateMarkdown");
 
+//questions to prompt user
 const questions = [
-  { type: "input", name: "title", message: "What is your Project Title?" }, //string
-  { type: "input", name: "description", message: "What is your Description?" }, // [string]
+  { type: "input", name: "title", message: "What is your Project Title?" },
+  { type: "input", name: "description", message: "What is your Description?" },
   {
+    //confirms whether or not user would like a TOC
     type: "confirm",
     name: "TOC",
     message: "Would you like to include a Table of Contents?",
@@ -14,19 +16,20 @@ const questions = [
     type: "input",
     name: "installation",
     message: "What is your Installation process?",
-  }, //[string]
-  { type: "input", name: "usage", message: "What is your Usage?" }, //[string]
-  { type: "input", name: "license", message: "What is your License?" }, //[string]
+  },
+  { type: "input", name: "usage", message: "What is your Usage?" },
+  { type: "input", name: "license", message: "What is your License?" },
   {
     type: "input",
     name: "contributors",
     message: "Who are your Contributors?",
-  }, // Array:stri ng ["name", "name2"]
-  { type: "input", name: "tests", message: "What are your Tests?" }, // [string]
-  { type: "input", name: "GitHubPic", message: "User GitHub profile picture" }, // [string]
-  { type: "input", name: "GitHubEmail", message: "User Github email" }, // [string]
+  },
+  { type: "input", name: "tests", message: "What are your Tests?" },
+  { type: "input", name: "GitHubPic", message: "User GitHub profile picture" },
+  { type: "input", name: "GitHubEmail", message: "User Github email" },
 ];
 
+//prompts the user
 inquirer.prompt(questions).then((answers) => {
   console.log(answers);
   markdown.writeToFile(answers);

@@ -4,7 +4,7 @@
 
 ## Project Description
 
-This is an easy-to-use README Generator. By answersing a few simple promts, this app will provide the user with a thorough and well-organized README.md file
+This is an easy-to-use README.md Generator. By answersing a few simple promts, this app will provide the user with a thorough and well-organized README.md file
 
 ## Table of Contents
 
@@ -17,10 +17,10 @@ This is an easy-to-use README Generator. By answersing a few simple promts, this
 
 ## Installation
 
-type to install the necessary code, simply type
+To install the necessary code, simply type:
 
 ```
-npm install
+npm init
 ```
 
 ## Usage

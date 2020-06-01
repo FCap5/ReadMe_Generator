@@ -61,56 +61,19 @@ const writeToFile = (response) => {
     });
   }
 
-  fs.appendFileSync(
-    "Generated_README.md",
-    "\n \n" + "## " + "Installation" + "\n" + response.installation,
-    (err) => {
-      if (err) {
-        console.log(err);
-      } else {
+  for (i = 0; i < names.length - 1; i++) {
+    const namely = names[i].toLocaleLowerCase();
+    fs.appendFileSync(
+      "Generated_README.md",
+      "\n \n" + "## " + names[i] + "\n" + response[namely],
+      (err) => {
+        if (err) {
+          console.log(err);
+        } else {
+        }
       }
-    }
-  );
-  fs.appendFileSync(
-    "Generated_README.md",
-    "\n \n" + "## " + "Usage" + "\n" + response.usage,
-    (err) => {
-      if (err) {
-        console.log(err);
-      } else {
-      }
-    }
-  );
-  fs.appendFileSync(
-    "Generated_README.md",
-    "\n \n" + "## " + "License" + "\n" + response.license,
-    (err) => {
-      if (err) {
-        console.log(err);
-      } else {
-      }
-    }
-  );
-  fs.appendFileSync(
-    "Generated_README.md",
-    "\n \n" + "## " + "Contributors" + "\n" + response.contributors,
-    (err) => {
-      if (err) {
-        console.log(err);
-      } else {
-      }
-    }
-  );
-  fs.appendFileSync(
-    "Generated_README.md",
-    "\n \n" + "## " + "Tests" + "\n" + response.tests,
-    (err) => {
-      if (err) {
-        console.log(err);
-      } else {
-      }
-    }
-  );
+    );
+  }
   fs.appendFileSync(
     "Generated_README.md",
     "\n \n" +

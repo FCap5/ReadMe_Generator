@@ -1,49 +1,34 @@
-# README Generator
-
+# Title
+ 
 [![Build Status](https://img.shields.io/github/followers/ffejcaplan?style=social)](https://github.com/ffejcaplan?tab=followers)
-
+ 
 ## Project Description
-
-This is an easy-to-use README.md Generator. By answersing a few simple promts, this app will provide the user with a thorough and well-organized README.md file
-
+Description
+ 
 ## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributors](#contributors)
+* [Tests](#tests)
+* [Questions](#questions)
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
-- [Contributors](#contributors)
-- [Tests](#tests)
-- [Questions](#questions)
-
+ 
 ## Installation
-
-To install the necessary code, simply type:
-
-```
-npm init
-```
-
+This is a process
+ 
 ## Usage
-
-This is straightforward js. It uses inquirer and includes a README.
-
+some usage
+ 
 ## License
-
-This project is licensed under the MIT license
-
+License?
+ 
 ## Contributors
-
-Anyone is free to fork this repo and modify it for their own use. If you wish to merge your fork, please contact that repo owner.
-
+ME!
+ 
 ## Tests
-
-To run tests, run the following command:
-
-```
-npm test
-```
-
+tests
+ 
 ## Questions
-
-If you have any questions about the repo, open an issue or contact me directly at ffej.caplan@gmail.com
-![GitHub Image](assets/IMG_20190714_075114019.jpg)
+If you have any questions about the repo, open an issue or contact me directly at email 
+ ![GitHub Image](pic)

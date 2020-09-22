@@ -1,4 +1,5 @@
 # The README Generator
+A command line app that uses inquire prompts to generate READMEs.
 
 ## Getting started
 
